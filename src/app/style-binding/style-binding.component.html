@@ -1,0 +1,11 @@
+<!-- ทำการกำหนดตรง เหมือนกำหนดใน style ปกติ -->
+<h2 [style.color]="'orange'">Style Binding</h2>
+
+<!-- ทำการ  binding จาก component -->
+<h2 [style.color]="hightlightColor">Style Binding 2</h2>
+
+<!-- กรณีมีการ control condition จาก component -->
+<h2 [style.color]="hasError ? 'red':'green'">Control condition style from component</h2>
+
+<!-- กรณีกำหนด style แบบ multipul -->
+<h2 [ngStyle]="titeStyles">Style Binding multipul</h2>

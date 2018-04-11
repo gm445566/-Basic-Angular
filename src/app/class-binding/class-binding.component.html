@@ -1,0 +1,18 @@
+<!-- แบบปกติ -->
+<h2 class="text-success">Test class normal</h2>
+
+<!-- แบบส่งค่ามา แสดงผลจาก component -->
+<h2 [class]="successClass">Test class binding 1</h2>
+
+<!-- ถ้ามีการ binding ส่วน class ปกติ จะไม่ทำงาน -->
+<h2 class="text-special" [class]="successClass">Test class binding 2</h2>
+
+
+<!-- สำหรับกำหนด class โดยมี การส่ง value จาก component มาควบคุมการแสดงผล -->
+<h2 [class.text-danger]="hasError">Test condition of class</h2>
+
+<!-- class directive 
+ สำหรับกำหนด class โดยมี การส่ง value จาก component มาควบคุมการแสดงผล
+ แบบหลายๆค่า
+-->
+<h2 [ngClass]="messageClasses">Test class messageses</h2>
