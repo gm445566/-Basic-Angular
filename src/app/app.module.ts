@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
@@ -9,6 +9,10 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwowayBindingComponent } from './twoway-binding/twoway-binding.component';
+import { StructuralDirComponent } from './structural-dir/structural-dir.component';
+import { InteractionComponent } from './interaction/interaction.component';
+import { PipesComponent } from './pipes/pipes.component';
+
 
 
 @NgModule({
@@ -19,10 +23,14 @@ import { TwowayBindingComponent } from './twoway-binding/twoway-binding.componen
     ClassBindingComponent,
     StyleBindingComponent,
     EventBindingComponent,
-    TwowayBindingComponent
+    TwowayBindingComponent,
+    StructuralDirComponent,
+    InteractionComponent,
+    PipesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
