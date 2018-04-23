@@ -12,6 +12,8 @@ import { TwowayBindingComponent } from './twoway-binding/twoway-binding.componen
 import { StructuralDirComponent } from './structural-dir/structural-dir.component';
 import { InteractionComponent } from './interaction/interaction.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { EmployeeDetailComponent } from './employee/employee-detail/employee-detail.component';
+import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 
 
 
@@ -26,7 +28,9 @@ import { PipesComponent } from './pipes/pipes.component';
     TwowayBindingComponent,
     StructuralDirComponent,
     InteractionComponent,
-    PipesComponent
+    PipesComponent,
+    EmployeeDetailComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
